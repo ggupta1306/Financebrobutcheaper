@@ -1,0 +1,19 @@
+{
+  "buildCommand": "npm run web:build",
+  "outputDirectory": "dist",
+  "framework": "webpack",
+  "installCommand": "npm install --legacy-peer-deps",
+  "devCommand": "npm run web:dev",
+  "builds": [
+    {
+      "src": "dist/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

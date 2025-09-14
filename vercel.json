@@ -1,8 +1,8 @@
 {
-  "buildCommand": "npx expo export --platform web",
+  "buildCommand": "npm run web:build",
   "outputDirectory": "dist",
   "installCommand": "npm install --legacy-peer-deps",
-  "devCommand": "npx expo start --web",
+  "devCommand": "npm run web:dev",
   "builds": [
     {
       "src": "dist/**/*",
